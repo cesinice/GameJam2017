@@ -62,12 +62,164 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="464413376623705" speed="5">
-                    <frame duration="1" hotspotX="0.515152" hotspotY="0.507937">
-                        <image-point name="ShootPoint" x="1.15152" y="0.507937" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_neutral.png">
+                        <image-point name="ShootPoint" x="1.15625" y="0.5" />
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0.977273" y="0.5" />
                             <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="WalkDown" pingpong="0" repeatcount="1" repeatto="0" sid="802195801705675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_down_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_down_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="WalkUp" pingpong="0" repeatcount="1" repeatto="0" sid="660750450793728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_up_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_up_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="1" />
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="WalkLeft" pingpong="0" repeatcount="1" repeatto="0" sid="980914658328238" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_left_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.5625" y="0.5" />
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.21875" y="0.78125" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_left_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.5625" y="0.5" />
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_left_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.5625" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_left_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.5625" y="0.5" />
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.375" y="0.625" />
+                            <point x="0.40625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="4" loop="0" name="WalkRight" pingpong="0" repeatcount="1" repeatto="0" sid="753924191170452" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_right_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.78125" y="0.78125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.40625" y="0.59375" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_right_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.40625" y="0.59375" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_right_3.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_walk_right_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.59375" y="0.5" />
+                            <point x="0.625" y="0.625" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.40625" y="0.59375" />
+                            <point x="0.4375" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
