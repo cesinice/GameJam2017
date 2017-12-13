@@ -4,10 +4,13 @@
     <name>Event sheet 1</name>
     <events>
         <comment>Allow WASD as alternate controls to the default arrow keys.</comment>
-        <event-block sid="667693284826191">
+        <event-block any="1" sid="667693284826191">
             <conditions>
                 <condition id="2" name="Key is down" sid="978536384386851" type="Keyboard">
                     <param id="0" name="Key">87</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="213683080549547" type="Keyboard">
+                    <param id="0" name="Key">38</param>
                 </condition>
             </conditions>
             <actions>
@@ -20,10 +23,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="974367376610421">
+        <event-block any="1" sid="974367376610421">
             <conditions>
                 <condition id="2" name="Key is down" sid="282296124441404" type="Keyboard">
                     <param id="0" name="Key">65</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="801968767799297" type="Keyboard">
+                    <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
             <actions>
@@ -36,10 +42,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="807152410038852">
+        <event-block any="1" sid="807152410038852">
             <conditions>
                 <condition id="2" name="Key is down" sid="301947411864450" type="Keyboard">
                     <param id="0" name="Key">83</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="380982962352216" type="Keyboard">
+                    <param id="0" name="Key">40</param>
                 </condition>
             </conditions>
             <actions>
@@ -52,10 +61,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="905247386019849">
+        <event-block any="1" sid="905247386019849">
             <conditions>
                 <condition id="2" name="Key is down" sid="476591519564232" type="Keyboard">
                     <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="943418022738543" type="Keyboard">
+                    <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
             <actions>
@@ -71,8 +83,8 @@
         <comment>Box Interaction</comment>
         <event-block sid="393669451649624">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Player">
-                    <param id="0" name="Object">Box</param>
+                <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Box">
+                    <param id="0" name="Object">Player</param>
                 </condition>
             </conditions>
             <actions>
