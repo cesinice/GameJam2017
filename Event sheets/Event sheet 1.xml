@@ -71,8 +71,8 @@
         <comment>Box Interaction</comment>
         <event-block sid="393669451649624">
             <conditions>
-                <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Box">
-                    <param id="0" name="Object">Player</param>
+                <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Player">
+                    <param id="0" name="Object">Box</param>
                 </condition>
             </conditions>
             <actions>
