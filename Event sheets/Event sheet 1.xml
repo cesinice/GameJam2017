@@ -112,5 +112,27 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="393669451649624">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Box">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="938554042318831" type="Player">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="879633522971574">
+            <conditions>
+                <condition id="-22" name="Else" sid="205918630974218" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="184941846336810" type="Player">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
