@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -148,6 +149,11 @@
                 <instance-variable name="ScrollsPicked" sid="182553288256675" type="number" />
                 <instance-variable name="Percentage" sid="834625751761490" type="number" />
             </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="735842858989892">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577910214585791" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />

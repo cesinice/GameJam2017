@@ -157,13 +157,6 @@
                     <param id="0" name="Instance variable">ScrollsPicked</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="-10" name="Set value" sid="496181095579930" type="ProgressBar">
-                    <param id="0" name="Instance variable">Percentage</param>
-                    <param id="1" name="Value">ScrollOfTruth.Count / (ScrollOfTruth.Count + ProgressBar.ScrollsPicked)</param>
-                </action>
-                <action id="-5" name="Set width" sid="448676107895035" type="ProgressBar">
-                    <param id="0" name="Width">ProgressBar.Percentage * (OriginalWindowWidth - 5)</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="196099910907234">
@@ -187,6 +180,20 @@
             <actions>
                 <action id="5" name="Set frame" sid="324958773167239" type="ProgressBar">
                     <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697990937079374">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="258207462117802" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="496181095579930" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Value">ProgressBar.ScrollsPicked / (ScrollOfTruth.Count + ProgressBar.ScrollsPicked)</param>
+                </action>
+                <action id="-5" name="Set width" sid="448676107895035" type="ProgressBar">
+                    <param id="0" name="Width">ProgressBar.Percentage * (OriginalWindowWidth - 5)</param>
                 </action>
             </actions>
         </event-block>
