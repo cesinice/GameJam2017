@@ -170,7 +170,18 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="549105571865703" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="196849475608225" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="191672902695851" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="566603903367761" type="Enemy">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">736</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="883193206389521">
                     <conditions>
@@ -183,6 +194,72 @@
                             <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action id="-9" name="Destroy" sid="532673795305245" type="Box" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemies</comment>
+        <event-block sid="934471742738383">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="234576682664014" type="Enemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="337553019156170" type="Text">
+                    <param id="0" name="Text">&quot;Warning player detected&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="838688300142488">
+            <conditions>
+                <condition id="-22" name="Else" sid="447619820851915" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="940059864920317" type="Text">
+                    <param id="0" name="Text">&quot;LOS OK&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="460418818756231">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="175218286625148" type="Enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="676103709292806" type="Enemy" />
+            </actions>
+        </event-block>
+        <event-block sid="911787170632330">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="494688290598627" type="Enemy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="197805386361458">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="407790458330833" type="Enemy">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1350</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="285849509734896" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="868967272568471" type="Enemy">
+                            <param id="0" name="X">700</param>
+                            <param id="1" name="Y">736</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="174190305104252">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="141182177136984" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="529283303182621" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="553435625148955" type="Enemy">
+                            <param id="0" name="X">1400</param>
+                            <param id="1" name="Y">736</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
