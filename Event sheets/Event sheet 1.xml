@@ -112,6 +112,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Box Interaction</comment>
         <event-block sid="393669451649624">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="342183591818611" type="Box">
@@ -136,6 +137,55 @@
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="438133264770765" type="Box">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>ProgressBar Interaction</comment>
+        <event-block sid="827801481882683">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="551152899895641" type="ScrollOfTruth">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="779860955038385" type="ScrollOfTruth" />
+                <action id="-15" name="Set visible" sid="363689505237647" type="ProgressBar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="844096461367518" type="ProgressBar">
+                    <param id="0" name="Instance variable">ScrollsPicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="496181095579930" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Value">ScrollOfTruth.Count / (ScrollOfTruth.Count + ProgressBar.ScrollsPicked)</param>
+                </action>
+                <action id="-5" name="Set width" sid="448676107895035" type="ProgressBar">
+                    <param id="0" name="Width">ProgressBar.Percentage * (OriginalWindowWidth - 5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="196099910907234">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="427530855694533" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0.99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="158970658044019" type="ProgressBar">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="451494908407856">
+            <conditions>
+                <condition id="-22" name="Else" sid="539623667665388" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="324958773167239" type="ProgressBar">
                     <param id="0" name="Frame number">0</param>
                 </action>
             </actions>

@@ -134,6 +134,27 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ScrollOfTruth" sid="780703724360483">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686119107340775" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ProgressBar" sid="469315519066474">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ScrollsPicked" sid="182553288256675" type="number" />
+                <instance-variable name="Percentage" sid="834625751761490" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577910214585791" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
