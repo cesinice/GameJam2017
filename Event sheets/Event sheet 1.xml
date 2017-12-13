@@ -122,6 +122,9 @@
                 <action id="-15" name="Set visible" sid="938554042318831" type="Player">
                     <param id="0" name="Visibility">0</param>
                 </action>
+                <action id="5" name="Set frame" sid="876187621115563" type="Box">
+                    <param id="0" name="Frame number">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="879633522971574">
@@ -131,6 +134,9 @@
             <actions>
                 <action id="-15" name="Set visible" sid="184941846336810" type="Player">
                     <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="438133264770765" type="Box">
+                    <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
         </event-block>
