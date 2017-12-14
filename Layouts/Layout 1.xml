@@ -78,6 +78,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Dead>false</Dead>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">
                             <properties>
@@ -1480,13 +1483,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>190</x>
-                        <y>591</y>
+                        <y>578.436401367</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>64</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.510204077</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1825,10 +1828,10 @@
                 </instance>
                 <instance type="Text" uid="55">
                     <properties>
-                        <text>LOS no</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <text>Lol</text>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-16</font>
-                        <color>255,51,255</color>
+                        <color>0,102,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -1838,8 +1841,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>51</x>
-                        <y>57</y>
+                        <x>220.132568359</x>
+                        <y>216.465148926</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>

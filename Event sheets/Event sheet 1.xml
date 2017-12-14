@@ -13,15 +13,31 @@
                     <param id="0" name="Key">38</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="717751116286355" type="Player">
-                    <param id="0" name="Control">2</param>
-                </action>
-                <action id="4" name="Set animation" sid="773222016974812" type="Player">
-                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="803350004938555">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="933474597273330" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="712995819651389">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="853589390057271" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="760048024640416" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="244664474140339" type="Player">
+                            <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="974367376610421">
             <conditions>
@@ -32,15 +48,31 @@
                     <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="136119429947424" type="Player">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="846459471153231" type="Player">
-                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="492210128276475">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="900795659261987" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="641685937657540">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="691526970836421" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="702564621292318" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="930968836542000" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="807152410038852">
             <conditions>
@@ -51,15 +83,31 @@
                     <param id="0" name="Key">40</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="839670064628822" type="Player">
-                    <param id="0" name="Control">3</param>
-                </action>
-                <action id="4" name="Set animation" sid="785402506292061" type="Player">
-                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="713124301999098">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="795001057305993" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="369017290387263">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="349698635662648" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="969125472429942" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="104828525026060" type="Player">
+                            <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="905247386019849">
             <conditions>
@@ -70,13 +118,52 @@
                     <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="746674432007773">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="443584713034914" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="848336744350704">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="243346382237071" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="937983583194748" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="774834186648971" type="Player">
+                            <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="515993948456726">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="890577242016734" type="Keyboard">
+                    <param id="0" name="Key">82</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="528566651003468" type="Player">
+                    <param id="0" name="Instance variable">Dead</param>
+                </condition>
+            </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="835010006679303" type="Player">
-                    <param id="0" name="Control">1</param>
+                <action id="-26" name="Restart layout" sid="137751366316007" type="System" />
+                <action behavior="8Direction" id="2" name="Set ignoring input" sid="284392807202003" type="Player">
+                    <param id="0" name="Input">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="931072717255613" type="Player">
-                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-13" name="Set boolean" sid="829171771713797" type="Player">
+                    <param id="0" name="Instance variable">Dead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="626832410359143" type="Text">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -267,7 +354,23 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="394755813952504" type="Player" />
+                        <action id="4" name="Set animation" sid="914992273614603" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="120059976674068" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="225456983020535" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="895781853548771" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="480758244110368" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="809425903510672">
@@ -305,7 +408,23 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="124364480100155" type="Player" />
+                        <action id="4" name="Set animation" sid="818434892163404" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="361484391623141" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="761904846724523" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="652017386124177" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="858084148114971" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="930738551490410">
@@ -425,6 +544,9 @@
                             <param id="0" name="X">190</param>
                             <param id="1" name="Y">520</param>
                         </action>
+                        <action id="7" name="Set mirrored" sid="361922104057580" type="Enemy2">
+                            <param id="0" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="990939870236551">
@@ -436,6 +558,9 @@
                         <action behavior="Pathfinding" id="0" name="Find path" sid="556418731859053" type="Enemy2">
                             <param id="0" name="X">190</param>
                             <param id="1" name="Y">790</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="438396531791843" type="Enemy2">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -511,6 +636,7 @@
             </sub-events>
         </event-block>
         <comment>Enemy door interactions</comment>
+        <comment>No enemy2 since he can&apos;t encounter doors</comment>
         <event-block sid="218821020785984">
             <conditions>
                 <condition id="-1" name="Compare X" sid="998308552807515" type="Door">
@@ -579,7 +705,7 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>No enemy2 since he can&apos;t encounter doors</comment>
+        <comment>Reset the isLooked boolean at each tick to avoid door bugs</comment>
         <event-block sid="405039092482454">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="576775139471680" type="System">
