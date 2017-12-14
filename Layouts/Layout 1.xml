@@ -1372,9 +1372,6 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <instance-variables>
-                        <Health>0</Health>
-                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="LineOfSight">
                             <properties>
@@ -1387,8 +1384,8 @@
                         <behavior-instance type="Pathfinding">
                             <properties>
                                 <cell-size>32</cell-size>
-                                <cell-border>-10</cell-border>
-                                <obstacles>Custom</obstacles>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
                                 <max-speed>50</max-speed>
                                 <acceleration>200</acceleration>
                                 <deceleration>800</deceleration>
@@ -1402,8 +1399,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>719</x>
-                        <y>736</y>
+                        <x>893</x>
+                        <y>1057</y>
                         <z>0</z>
                         <width>32</width>
                         <height>64</height>
@@ -1411,6 +1408,52 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.510204077</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Enemy2" uid="56">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Custom</obstacles>
+                                <range>250</range>
+                                <cone-of-view>60</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pathfinding">
+                            <properties>
+                                <cell-size>32</cell-size>
+                                <cell-border>-1</cell-border>
+                                <obstacles>Solids</obstacles>
+                                <max-speed>50</max-speed>
+                                <acceleration>200</acceleration>
+                                <deceleration>800</deceleration>
+                                <rotate-speed>135</rotate-speed>
+                                <rotate-object>Yes</rotate-object>
+                                <diagonals>Disabled</diagonals>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>192</x>
+                        <y>623</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.510204077</hotspotY>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
