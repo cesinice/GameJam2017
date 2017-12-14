@@ -14,7 +14,6 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
@@ -241,10 +240,6 @@
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="TiledBackground" sid="696577785295720">
-            <plugin id="TiledBg" />
-            <texture />
         </object-type>
         <object-type name="Mouse" sid="634488242333515">
             <plugin id="Mouse" />
