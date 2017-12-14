@@ -149,9 +149,6 @@
                 <condition id="0" name="On key pressed" sid="890577242016734" type="Keyboard">
                     <param id="0" name="Key">82</param>
                 </condition>
-                <condition id="-8" name="Is boolean instance variable set" sid="528566651003468" type="Player">
-                    <param id="0" name="Instance variable">Dead</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="137751366316007" type="System" />
@@ -1214,12 +1211,48 @@
                 <condition id="1" name="Is overlapping another object" sid="544235405570429" type="NextLevelBox">
                     <param id="0" name="Object">Player</param>
                 </condition>
+                <condition id="-7" name="Compare instance variable" sid="698713530610007" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">99</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="640853703574138" type="System">
                     <param id="0" name="Layout">Level 2</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="655832306751573">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="410777921144232" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="912320197798550">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="914660684770659" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="779452197963231" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="896906897766670" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="991636549591451" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="214312010244812" type="Player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
