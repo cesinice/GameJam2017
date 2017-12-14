@@ -248,8 +248,9 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="728562290755098" type="Enemy">
-                    <param id="0" name="Frame number">1</param>
+                <action id="4" name="Set animation" sid="728562290755098" type="Enemy">
+                    <param id="0" name="Animation">&quot;Triggered&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="518345602331050" type="System">
                     <param id="0" name="Seconds">0.5</param>
@@ -346,7 +347,11 @@
                         <action id="-8" name="Set angle" sid="162843139407461" type="Enemy">
                             <param id="0" name="Angle">180</param>
                         </action>
-                        <action id="8" name="Set flipped" sid="826220820008695" type="Enemy">
+                        <action id="4" name="Set animation" sid="132694336950512" type="Enemy">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="769113709635529" type="Enemy">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
@@ -364,7 +369,11 @@
                         <action id="-8" name="Set angle" sid="566386008558933" type="Enemy">
                             <param id="0" name="Angle">0</param>
                         </action>
-                        <action id="8" name="Set flipped" sid="520818961263396" type="Enemy">
+                        <action id="4" name="Set animation" sid="896754304454835" type="Enemy">
+                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="645235826775564" type="Enemy">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
@@ -417,6 +426,16 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="603230418815736">
+            <conditions>
+                <condition id="5" name="On any finished" sid="859782633274048" type="Enemy" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="310249186953688" type="Enemy">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
