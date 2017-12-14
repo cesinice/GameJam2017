@@ -191,7 +191,7 @@
                 </action>
                 <action behavior="Pathfinding" id="0" name="Find path" sid="566603903367761" type="Enemy">
                     <param id="0" name="X">1400</param>
-                    <param id="1" name="Y">1054</param>
+                    <param id="1" name="Y">1057</param>
                 </action>
                 <action id="5" name="Set frame" sid="664640575362203" type="Enemy">
                     <param id="0" name="Frame number">0</param>
@@ -321,9 +321,6 @@
                 <condition behavior="Pathfinding" id="0" name="On path found" sid="175218286625148" type="Enemy" />
             </conditions>
             <actions>
-                <action id="-8" name="Set angle" sid="884391549635468" type="Enemy">
-                    <param id="0" name="Angle">0</param>
-                </action>
                 <action behavior="Pathfinding" id="1" name="Move along path" sid="676103709292806" type="Enemy" />
             </actions>
         </event-block>
@@ -344,7 +341,13 @@
                         <action behavior="Pathfinding" id="2" name="Stop" sid="285849509734896" type="Enemy" />
                         <action behavior="Pathfinding" id="0" name="Find path" sid="868967272568471" type="Enemy">
                             <param id="0" name="X">700</param>
-                            <param id="1" name="Y">1054</param>
+                            <param id="1" name="Y">1057</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="162843139407461" type="Enemy">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="826220820008695" type="Enemy">
+                            <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -356,7 +359,13 @@
                         <action behavior="Pathfinding" id="2" name="Stop" sid="529283303182621" type="Enemy" />
                         <action behavior="Pathfinding" id="0" name="Find path" sid="553435625148955" type="Enemy">
                             <param id="0" name="X">1400</param>
-                            <param id="1" name="Y">1054</param>
+                            <param id="1" name="Y">1057</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="566386008558933" type="Enemy">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="520818961263396" type="Enemy">
+                            <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
