@@ -168,9 +168,37 @@
         <comment>Initialisation</comment>
         <event-block sid="374719874578262">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="549105571865703" type="System" />
+                <condition id="-25" name="On loader layout complete" sid="549105571865703" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="196849475608225" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="191672902695851" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="566603903367761" type="Enemy">
+                    <param id="0" name="X">1400</param>
+                    <param id="1" name="Y">1054</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="495433476598955" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="782942041722503" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="405311078984458" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action id="5" name="Set frame" sid="664640575362203" type="Enemy">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="867818325085011" type="Enemy" />
+                <action id="5" name="Set frame" sid="431687326015276" type="Enemy2">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="953379479721108" type="Enemy2" />
+            </actions>
             <sub-events>
                 <event-block sid="883193206389521">
                     <conditions>
@@ -187,5 +215,128 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <comment>Enemies destroy</comment>
+        <event-block any="1" sid="934471742738383">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="234576682664014" type="Enemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="728562290755098" type="Enemy">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="518345602331050" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="887513868772838">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="515899987826560" type="Enemy">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="394755813952504" type="Player" />
+                    </actions>
+                </event-block>
+                <event-block sid="809425903510672">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="371552367220202" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="163723827979181" type="Enemy">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="838688300142488">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="891208099682404" type="Enemy2">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="850703875702589" type="Enemy2">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="833446813286574" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="498016395615033">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="272892047931986" type="Enemy2">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="124364480100155" type="Player" />
+                    </actions>
+                </event-block>
+                <event-block sid="930738551490410">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="920138330206544" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="417078763409658" type="Enemy2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy Path</comment>
+        <event-block sid="460418818756231">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="175218286625148" type="Enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="676103709292806" type="Enemy" />
+                <action id="-8" name="Set angle" sid="884391549635468" type="Enemy">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="911787170632330">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="494688290598627" type="Enemy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="197805386361458">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="407790458330833" type="Enemy">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1350</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="285849509734896" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="868967272568471" type="Enemy">
+                            <param id="0" name="X">700</param>
+                            <param id="1" name="Y">1054</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="174190305104252">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="141182177136984" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="529283303182621" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="553435625148955" type="Enemy">
+                            <param id="0" name="X">1400</param>
+                            <param id="1" name="Y">1054</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy 2</comment>
     </events>
 </c2eventsheet>
