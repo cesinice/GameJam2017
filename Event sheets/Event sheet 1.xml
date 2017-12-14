@@ -226,6 +226,10 @@
                 <action id="5" name="Set frame" sid="158970658044019" type="ProgressBar">
                     <param id="0" name="Frame number">1</param>
                 </action>
+                <action id="-13" name="Set boolean" sid="294161835254474" type="EndDoor">
+                    <param id="0" name="Instance variable">IsWin</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="451494908407856">
@@ -1190,6 +1194,30 @@
                 <action id="-13" name="Set boolean" sid="395043436246159" type="Door">
                     <param id="0" name="Instance variable">IsLooked</param>
                     <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="159038355123075">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="130475260582695" type="EndDoor">
+                            <param id="0" name="Instance variable">IsWin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="803244955048099" type="EndDoor" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="726581656045329">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="544235405570429" type="NextLevelBox">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="640853703574138" type="System">
+                    <param id="0" name="Layout">Level 2</param>
                 </action>
             </actions>
         </event-block>
