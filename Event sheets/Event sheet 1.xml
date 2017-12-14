@@ -180,6 +180,9 @@
                 <action behavior="LineOfSight" id="2" name="Add obstacle" sid="113601921702022" type="Enemy">
                     <param id="0" name="Obstacle">Wall</param>
                 </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="462622267906041" type="Enemy">
+                    <param id="0" name="Obstacle">Door</param>
+                </action>
                 <action behavior="Pathfinding" id="5" name="Add obstacle" sid="405311078984458" type="Enemy">
                     <param id="0" name="Obstacle">Box</param>
                 </action>
@@ -437,6 +440,158 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <comment>Player door interactions</comment>
+        <event-block sid="518110339868755">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="110836488744320" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Player.X -50</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="167607746466089" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">Player.X +50</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="723152868573186" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">Player.Y - 50</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="253727221873742" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">Player.Y + 50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="260060651227119" type="Door">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="895340073920116" type="Enemy" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="274438687380031" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="821555174147528" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="699164192208623" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="694997962512454" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527834070012686">
+            <conditions>
+                <condition id="-22" name="Else" sid="570083364374001" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="445155127664053">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="502401260729970" type="Door">
+                            <param id="0" name="Instance variable">IsLooked</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="465114467809706">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="411730529900293" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="913924157173228" type="Door">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="LineOfSight" id="2" name="Add obstacle" sid="563797782091663" type="Enemy">
+                            <param id="0" name="Obstacle">Door</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy door interactions</comment>
+        <event-block sid="218821020785984">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="998308552807515" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Enemy.X - 30</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="894080225649783" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">Enemy.X + 30</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="288302982143106" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y -30</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="657098968113114" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y + 30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="698078422596998" type="Door">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="924293195085819" type="Enemy" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="551344627265670" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="990526531973913" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="266432337616377" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="449019764647017" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521947501794257">
+            <conditions>
+                <condition id="-22" name="Else" sid="920096961267040" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="452555074315180">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="986792282806416" type="Door">
+                            <param id="0" name="Instance variable">IsLooked</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="563567743461358">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="475988108312025" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="185546603297001" type="Door">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="LineOfSight" id="2" name="Add obstacle" sid="331025717940734" type="Enemy">
+                            <param id="0" name="Obstacle">Door</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>No enemy2 since he can&apos;t encounter doors</comment>
+        <event-block sid="405039092482454">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="576775139471680" type="System">
+                    <param id="0" name="Interval (seconds)">fps/60</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="395043436246159" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
