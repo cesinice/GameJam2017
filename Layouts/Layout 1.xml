@@ -107,8 +107,8 @@
                         <x>74</x>
                         <y>1205</y>
                         <z>0</z>
-                        <width>57.297470093</width>
-                        <height>57.297470093</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1414,28 +1414,33 @@
                             <properties>
                                 <cell-size>32</cell-size>
                                 <cell-border>-1</cell-border>
-                                <obstacles>Solids</obstacles>
+                                <obstacles>Custom</obstacles>
                                 <max-speed>50</max-speed>
                                 <acceleration>200</acceleration>
                                 <deceleration>800</deceleration>
                                 <rotate-speed>600</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
+                                <rotate-object>No</rotate-object>
                                 <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Edge</bound-by>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>893</x>
+                        <x>898</x>
                         <y>1057</y>
                         <z>0</z>
-                        <width>32</width>
-                        <height>64</height>
+                        <width>55</width>
+                        <height>55</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.510204077</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -1465,7 +1470,7 @@
                                 <acceleration>200</acceleration>
                                 <deceleration>800</deceleration>
                                 <rotate-speed>135</rotate-speed>
-                                <rotate-object>Yes</rotate-object>
+                                <rotate-object>No</rotate-object>
                                 <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
                             </properties>
@@ -1474,8 +1479,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
-                        <y>623</y>
+                        <x>190</x>
+                        <y>591</y>
                         <z>0</z>
                         <width>32</width>
                         <height>64</height>
