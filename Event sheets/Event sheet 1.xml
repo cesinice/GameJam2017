@@ -272,8 +272,9 @@
                         <condition id="-22" name="Else" sid="371552367220202" type="System" />
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="163723827979181" type="Enemy">
-                            <param id="0" name="Frame number">0</param>
+                        <action id="4" name="Set animation" sid="163723827979181" type="Enemy">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -370,7 +371,7 @@
                             <param id="0" name="Angle">0</param>
                         </action>
                         <action id="4" name="Set animation" sid="896754304454835" type="Enemy">
-                            <param id="0" name="Animation">&quot;Left&quot;</param>
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="8" name="Set flipped" sid="645235826775564" type="Enemy">
@@ -379,6 +380,16 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="603230418815736">
+            <conditions>
+                <condition id="5" name="On any finished" sid="859782633274048" type="Enemy" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="310249186953688" type="Enemy">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
         </event-block>
         <comment>Enemy 2</comment>
         <event-block sid="605992271370557">
@@ -426,16 +437,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="603230418815736">
-            <conditions>
-                <condition id="5" name="On any finished" sid="859782633274048" type="Enemy" />
-            </conditions>
-            <actions>
-                <action id="3" name="Start" sid="310249186953688" type="Enemy">
-                    <param id="0" name="From">1</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>
