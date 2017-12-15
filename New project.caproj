@@ -264,7 +264,7 @@
         </object-type>
         <object-type name="TiledBackground" sid="696577785295720">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\floor.png" />
         </object-type>
         <object-type name="Mouse" sid="634488242333515">
             <plugin id="Mouse" />
