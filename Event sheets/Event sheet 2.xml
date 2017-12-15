@@ -2,5 +2,358 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
-    <events />
+    <events>
+        <comment>Allow WASD as alternate controls to the default arrow keys.</comment>
+        <event-block any="1" sid="872482386590949">
+            <conditions>
+                <condition id="2" name="Key is down" sid="981528548789214" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="373991210980584" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="104915556058198">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="460991402098172" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="123534547287089">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="152495717235983" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="993214913597523" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="319305378449677" type="Player">
+                            <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="525446699816189">
+            <conditions>
+                <condition id="2" name="Key is down" sid="968492131458008" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="626622168919521" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="564388646749440">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="943444213900897" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="996209897373241">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="890376472022023" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="946661246884083" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="433282929391996" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="489889387317381">
+            <conditions>
+                <condition id="2" name="Key is down" sid="646620679735147" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="527748133689983" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="279070289825447">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="774527174830110" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="241485989869669">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="902602023017520" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="344783497864768" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="721293740040887" type="Player">
+                            <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="928389605373788">
+            <conditions>
+                <condition id="2" name="Key is down" sid="123252788552166" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="590417910428735" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="201801069010322">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="572568903245265" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="263381266524630">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="863301216229998" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="265115894364396" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="818344158065846" type="Player">
+                            <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="894339103495117">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="191418718230795" type="Keyboard">
+                    <param id="0" name="Key">82</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="478716358046167" type="System" />
+                <action behavior="8Direction" id="2" name="Set ignoring input" sid="425568598221724" type="Player">
+                    <param id="0" name="Input">0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="895891039720578" type="Player">
+                    <param id="0" name="Instance variable">Dead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="415180236583781" type="Text">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Box Interaction</comment>
+        <event-block sid="421421686121020">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="573350008892397" type="Box">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="428678528011313" type="Player">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="952789032409859" type="Box">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635755394284036">
+            <conditions>
+                <condition id="-22" name="Else" sid="765803087662130" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="290359992262806" type="Player">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="193245215052194" type="Box">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>ProgressBar Interaction</comment>
+        <event-block sid="268942189734501">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="982560352757687" type="ScrollOfTruth">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="449904524477861" type="ScrollOfTruth" />
+                <action id="-15" name="Set visible" sid="907579679695617" type="ProgressBar">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-11" name="Add to" sid="294526148043196" type="ProgressBar">
+                    <param id="0" name="Instance variable">ScrollsPicked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="619168064713904">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="943685837251691" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0.99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="675375306873425" type="ProgressBar">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="968810814336434" type="EndDoor">
+                    <param id="0" name="Instance variable">IsWin</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="351827562913178">
+            <conditions>
+                <condition id="-22" name="Else" sid="736949974259795" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="967239558847458" type="ProgressBar">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="613592784410316">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="674705867355891" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="739127932953917" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Value">ProgressBar.ScrollsPicked / (ScrollOfTruth.Count + ProgressBar.ScrollsPicked)</param>
+                </action>
+                <action id="-5" name="Set width" sid="491839070087075" type="ProgressBar">
+                    <param id="0" name="Width">ProgressBar.Percentage * (OriginalWindowWidth - 5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="904814944460117">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="809703894416759" type="EndDoor">
+                    <param id="0" name="Instance variable">IsWin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="623252310386653" type="EndDoor" />
+            </actions>
+        </event-block>
+        <event-block sid="378219756500453">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="103989406354679" type="NextLevelBox">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="933554726760971" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0.99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="750520857980698" type="System">
+                    <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Enemy line of sight</comment>
+        <event-block any="1" sid="149766447222695">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="150038223274257" type="Enemy">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="699891652306750" type="Enemy">
+                    <param id="0" name="Animation">&quot;Triggered&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="429403171313243" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="648903900268782">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="337347676169459" type="Enemy">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="387237369211801" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="463112633287928" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="604244218040581" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="288162423542288" type="Player">
+                            <param id="0" name="Input">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="407229945232453">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="280403290513427" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="271643020823419" type="Enemy">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="276609478798353">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="205569715628638" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="125306637290393" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="240419512369324" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="578377724831182" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action id="5" name="Set frame" sid="529789568233385" type="Enemy">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="217921203226611" type="Enemy" />
+                <action id="8" name="Set flipped" sid="960136313891238" type="Enemy">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

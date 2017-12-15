@@ -51,6 +51,9 @@
     <object-folder>
         <object-type name="Player" sid="839056342091033">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Dead" sid="509858651659273" type="boolean" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="8Direction" sid="617622050634314">
                     <behavior id="EightDir" />
@@ -222,6 +225,18 @@
                             <point x="0.5" y="0.9375" />
                             <point x="0.40625" y="0.59375" />
                             <point x="0.4375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="375534500385402" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Hero\hero_wounded1.png">
+                        <collision-poly>
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.65625" />
+                            <point x="0.84375" y="0.15625" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.125" y="0.875" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -416,7 +431,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686119107340775" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Assets\Documents.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -447,7 +472,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="678974879448530" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Assets\Sofa.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -471,13 +496,38 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591493193169262" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Enemies\Enemy_down_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0" y="0.5" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.65625" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.71875" />
+                            <point x="0" y="0.5" />
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0.3125" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="0.90625" y="0.90625" />
+                            <point x="0.5" y="0.65625" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Door" sid="680124869474983">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsLooked" sid="770368199086460" type="boolean" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489522708385671" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -486,8 +536,434 @@
         </object-type>
         <object-type name="EndDoor" sid="335342079917460">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="IsWin" sid="158341673459558" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="580935522725268">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="785994492262757" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy3" sid="299949858189292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="782435056377127">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="326031125947340">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="226834235498315">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721725967418755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Enemies\Enemy_down_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Triggered" pingpong="0" repeatcount="1" repeatto="0" sid="533568873279993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="632889983112596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="638837230795975" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="370518378665521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy4" sid="411726985771820">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="668309886963603">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="717243113489406">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="544127303684973">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479148194607474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Enemies\Enemy_down_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Triggered" pingpong="0" repeatcount="1" repeatto="0" sid="699588388054513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="627952554661104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="147828167649670" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="627544721474783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Enemy5" sid="417202076960275">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="764981648625456">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="848375870659034">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="252453909953971">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="877885232978377" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Enemies\Enemy_down_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Triggered" pingpong="0" repeatcount="1" repeatto="0" sid="425461852640524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_triggered_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Left" pingpong="0" repeatcount="1" repeatto="0" sid="780289254796156" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_1.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_left_2.png">
+                        <collision-poly>
+                            <point x="0.21875" y="0.21875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.71875" y="0.28125" />
+                            <point x="0.65625" y="0.5" />
+                            <point x="0.65625" y="0.65625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.3125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Right" pingpong="0" repeatcount="1" repeatto="0" sid="227212422417902" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_right_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.78125" y="0.21875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.34375" y="0.65625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="Up" pingpong="0" repeatcount="1" repeatto="0" sid="469433611141783" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_1.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Enemies\Enemy_up_2.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0.28125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.78125" />
+                            <point x="0.09375" y="0.90625" />
+                            <point x="0.34375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NextLevelBox" sid="349139034980548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620905553161239" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextContainer" sid="797382957062602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="595663946150797" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -495,16 +971,18 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
         <layout>Tutorial.xml</layout>
+        <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="16" />
-        <global-instance type="Keyboard" uid="17" />
+        <global-instance type="Mouse" uid="95" />
+        <global-instance type="Keyboard" uid="96" />
     </global-instances>
     <sounds-folder />
     <music-folder />

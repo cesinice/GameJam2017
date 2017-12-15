@@ -13,15 +13,31 @@
                     <param id="0" name="Key">38</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="717751116286355" type="Player">
-                    <param id="0" name="Control">2</param>
-                </action>
-                <action id="4" name="Set animation" sid="773222016974812" type="Player">
-                    <param id="0" name="Animation">&quot;WalkUp&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="803350004938555">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="933474597273330" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="712995819651389">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="853589390057271" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="760048024640416" type="Player">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="244664474140339" type="Player">
+                            <param id="0" name="Animation">&quot;WalkUp&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="974367376610421">
             <conditions>
@@ -32,15 +48,31 @@
                     <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="136119429947424" type="Player">
-                    <param id="0" name="Control">0</param>
-                </action>
-                <action id="4" name="Set animation" sid="846459471153231" type="Player">
-                    <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="492210128276475">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="900795659261987" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="641685937657540">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="691526970836421" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="702564621292318" type="Player">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="930968836542000" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="807152410038852">
             <conditions>
@@ -51,15 +83,31 @@
                     <param id="0" name="Key">40</param>
                 </condition>
             </conditions>
-            <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="839670064628822" type="Player">
-                    <param id="0" name="Control">3</param>
-                </action>
-                <action id="4" name="Set animation" sid="785402506292061" type="Player">
-                    <param id="0" name="Animation">&quot;WalkDown&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="713124301999098">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="795001057305993" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="369017290387263">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="349698635662648" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="969125472429942" type="Player">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="104828525026060" type="Player">
+                            <param id="0" name="Animation">&quot;WalkDown&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="905247386019849">
             <conditions>
@@ -70,13 +118,49 @@
                     <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="746674432007773">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="443584713034914" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="848336744350704">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="243346382237071" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="937983583194748" type="Player">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="774834186648971" type="Player">
+                            <param id="0" name="Animation">&quot;WalkRight&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="515993948456726">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="890577242016734" type="Keyboard">
+                    <param id="0" name="Key">82</param>
+                </condition>
+            </conditions>
             <actions>
-                <action behavior="8Direction" id="7" name="Simulate control" sid="835010006679303" type="Player">
-                    <param id="0" name="Control">1</param>
+                <action id="-26" name="Restart layout" sid="137751366316007" type="System" />
+                <action behavior="8Direction" id="2" name="Set ignoring input" sid="284392807202003" type="Player">
+                    <param id="0" name="Input">0</param>
                 </action>
-                <action id="4" name="Set animation" sid="931072717255613" type="Player">
-                    <param id="0" name="Animation">&quot;WalkRight&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-13" name="Set boolean" sid="829171771713797" type="Player">
+                    <param id="0" name="Instance variable">Dead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="626832410359143" type="Text">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
@@ -139,6 +223,10 @@
                 <action id="5" name="Set frame" sid="158970658044019" type="ProgressBar">
                     <param id="0" name="Frame number">1</param>
                 </action>
+                <action id="-13" name="Set boolean" sid="294161835254474" type="EndDoor">
+                    <param id="0" name="Instance variable">IsWin</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="451494908407856">
@@ -179,6 +267,9 @@
                 </action>
                 <action behavior="LineOfSight" id="2" name="Add obstacle" sid="113601921702022" type="Enemy">
                     <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="462622267906041" type="Enemy">
+                    <param id="0" name="Obstacle">Door</param>
                 </action>
                 <action behavior="Pathfinding" id="5" name="Add obstacle" sid="405311078984458" type="Enemy">
                     <param id="0" name="Obstacle">Box</param>
@@ -223,6 +314,93 @@
                     <param id="0" name="Frame number">0</param>
                 </action>
                 <action id="2" name="Stop" sid="953379479721108" type="Enemy2" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="933983418987906" type="Enemy3">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="544197987897865" type="Enemy3">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="803214503554900" type="Enemy3">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="754100070552778" type="Enemy3">
+                    <param id="0" name="Obstacle">Door</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="213413024295461" type="Enemy3">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="957514347666128" type="Enemy3">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="193474973179589" type="Enemy3">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="936725438576768" type="Enemy3">
+                    <param id="0" name="X">1150</param>
+                    <param id="1" name="Y">480</param>
+                </action>
+                <action id="5" name="Set frame" sid="238746935997027" type="Enemy3">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="136240414816537" type="Enemy3" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="798866183129780" type="Enemy4">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="496743162548007" type="Enemy4">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="779028443319627" type="Enemy4">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="560995541947415" type="Enemy4">
+                    <param id="0" name="Obstacle">Door</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="241430066999535" type="Enemy4">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="255613130463339" type="Enemy4">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="408478771234852" type="Enemy4">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="719332924692845" type="Enemy4">
+                    <param id="0" name="X">275</param>
+                    <param id="1" name="Y">136</param>
+                </action>
+                <action id="5" name="Set frame" sid="456387446661726" type="Enemy4">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="128192796475677" type="Enemy4" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="767661148813283" type="Enemy5">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="992461524235323" type="Enemy5">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="937364523444532" type="Enemy5">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="376802535432763" type="Enemy5">
+                    <param id="0" name="Obstacle">Door</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="932012492886484" type="Enemy5">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="492365098024176" type="Enemy5">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="Pathfinding" id="5" name="Add obstacle" sid="559131265111182" type="Enemy5">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="329018498565894" type="Enemy5">
+                    <param id="0" name="X">1475</param>
+                    <param id="1" name="Y">136</param>
+                </action>
+                <action id="5" name="Set frame" sid="808476073847671" type="Enemy5">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="2" name="Stop" sid="916789889104113" type="Enemy5" />
             </actions>
             <sub-events>
                 <event-block sid="883193206389521">
@@ -264,7 +442,23 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="394755813952504" type="Player" />
+                        <action id="4" name="Set animation" sid="914992273614603" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="120059976674068" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="225456983020535" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="895781853548771" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="480758244110368" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="809425903510672">
@@ -302,7 +496,23 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="124364480100155" type="Player" />
+                        <action id="4" name="Set animation" sid="818434892163404" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="361484391623141" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="761904846724523" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="652017386124177" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="858084148114971" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="930738551490410">
@@ -317,81 +527,246 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>Enemy Path</comment>
-        <event-block sid="460418818756231">
+        <event-block any="1" sid="847596686259852">
             <conditions>
-                <condition behavior="Pathfinding" id="0" name="On path found" sid="175218286625148" type="Enemy" />
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="252203544667044" type="Enemy3">
+                    <param id="0" name="Object">Player</param>
+                </condition>
             </conditions>
             <actions>
-                <action behavior="Pathfinding" id="1" name="Move along path" sid="676103709292806" type="Enemy" />
+                <action id="4" name="Set animation" sid="948462435856470" type="Enemy3">
+                    <param id="0" name="Animation">&quot;Triggered&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="630186588894608" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="331898987126530">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="622482941432432" type="Enemy3">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="689977141575314" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="484599357561943" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="518460404343265" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="605626619474857" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="965342423489735" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="608178241512242">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="561327947456634" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="359075129291760" type="Enemy3">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="511791461759176">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="892778782505415" type="Enemy4">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="890271711161764" type="Enemy4">
+                    <param id="0" name="Animation">&quot;Triggered&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="979132975023067" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="352418974910799">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="211693145331212" type="Enemy4">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="576823777952228" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="641945704309023" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="643066390313519" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="904665383634219" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="607301090811483" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="639464993147274">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="689359198425493" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="715009557040183" type="Enemy4">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="852115476817192">
+            <conditions>
+                <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="155561310710547" type="Enemy5">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="741883098443148" type="Enemy5">
+                    <param id="0" name="Animation">&quot;Triggered&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="243872596939053" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="824206233478567">
+                    <conditions>
+                        <condition behavior="LineOfSight" id="0" name="Has LOS to object" sid="244392767905026" type="Enemy5">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="729496982723009" type="Player">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="973160850332944" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="238442705756965" type="Text">
+                            <param id="0" name="Text">&quot;Press R to restart&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="468098362241275" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="353773185952368" type="Text">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="182596588302768">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="635110655840088" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="355452039860213" type="Enemy5">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy Path</comment>
+        <event-block sid="120464974589570">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="370104072450916" type="Enemy" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="324692803561497" type="Enemy" />
             </actions>
         </event-block>
-        <event-block sid="911787170632330">
+        <event-block sid="556748524557113">
             <conditions>
-                <condition behavior="Pathfinding" id="5" name="On arrived" sid="494688290598627" type="Enemy" />
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="238746254423335" type="Enemy" />
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="197805386361458">
+                <event-block sid="378321920503041">
                     <conditions>
-                        <condition id="-1" name="Compare X" sid="407790458330833" type="Enemy">
+                        <condition id="-1" name="Compare X" sid="749977225730497" type="Enemy">
                             <param id="0" name="Comparison">5</param>
                             <param id="1" name="X co-ordinate">1350</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="285849509734896" type="Enemy" />
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="868967272568471" type="Enemy">
-                            <param id="0" name="X">700</param>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="910632592053128" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="904468386782949" type="Enemy">
+                            <param id="0" name="X">600</param>
                             <param id="1" name="Y">1057</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="162843139407461" type="Enemy">
+                        <action id="-8" name="Set angle" sid="748970160464544" type="Enemy">
                             <param id="0" name="Angle">180</param>
                         </action>
-                        <action id="4" name="Set animation" sid="132694336950512" type="Enemy">
+                        <action id="4" name="Set animation" sid="977172757811890" type="Enemy">
                             <param id="0" name="Animation">&quot;Right&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="8" name="Set flipped" sid="769113709635529" type="Enemy">
+                        <action id="8" name="Set flipped" sid="914611782471982" type="Enemy">
                             <param id="0" name="State">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="174190305104252">
+                <event-block sid="909449298402742">
                     <conditions>
-                        <condition id="-22" name="Else" sid="141182177136984" type="System" />
+                        <condition id="-22" name="Else" sid="615897591589396" type="System" />
                     </conditions>
                     <actions>
-                        <action behavior="Pathfinding" id="2" name="Stop" sid="529283303182621" type="Enemy" />
-                        <action behavior="Pathfinding" id="0" name="Find path" sid="553435625148955" type="Enemy">
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="783656188236964" type="Enemy" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="431338383674133" type="Enemy">
                             <param id="0" name="X">1400</param>
                             <param id="1" name="Y">1057</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="566386008558933" type="Enemy">
+                        <action id="-8" name="Set angle" sid="710989092627492" type="Enemy">
                             <param id="0" name="Angle">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="896754304454835" type="Enemy">
+                        <action id="4" name="Set animation" sid="631590335364068" type="Enemy">
                             <param id="0" name="Animation">&quot;Right&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="8" name="Set flipped" sid="645235826775564" type="Enemy">
+                        <action id="8" name="Set flipped" sid="902803551285459" type="Enemy">
                             <param id="0" name="State">1</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="603230418815736">
+        <event-block sid="631997520541856">
             <conditions>
-                <condition id="5" name="On any finished" sid="859782633274048" type="Enemy" />
+                <condition id="5" name="On any finished" sid="387343031287743" type="Enemy" />
             </conditions>
             <actions>
-                <action id="3" name="Start" sid="310249186953688" type="Enemy">
+                <action id="3" name="Start" sid="374781530257910" type="Enemy">
                     <param id="0" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <comment>Enemy 2</comment>
+        <comment>Enemy 2 path</comment>
         <event-block sid="605992271370557">
             <conditions>
                 <condition behavior="Pathfinding" id="0" name="On path found" sid="222840108449529" type="Enemy2" />
@@ -422,6 +797,9 @@
                             <param id="0" name="X">190</param>
                             <param id="1" name="Y">520</param>
                         </action>
+                        <action id="7" name="Set mirrored" sid="361922104057580" type="Enemy2">
+                            <param id="0" name="State">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="990939870236551">
@@ -433,6 +811,444 @@
                         <action behavior="Pathfinding" id="0" name="Find path" sid="556418731859053" type="Enemy2">
                             <param id="0" name="X">190</param>
                             <param id="1" name="Y">790</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="438396531791843" type="Enemy2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy3 Path</comment>
+        <event-block sid="460418818756231">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="175218286625148" type="Enemy3" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="676103709292806" type="Enemy3" />
+            </actions>
+        </event-block>
+        <event-block sid="911787170632330">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="494688290598627" type="Enemy3" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="197805386361458">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="407790458330833" type="Enemy3">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1045</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="285849509734896" type="Enemy3" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="868967272568471" type="Enemy3">
+                            <param id="0" name="X">850</param>
+                            <param id="1" name="Y">480</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="162843139407461" type="Enemy3">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="132694336950512" type="Enemy3">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="769113709635529" type="Enemy3">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="174190305104252">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="141182177136984" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="529283303182621" type="Enemy3" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="553435625148955" type="Enemy3">
+                            <param id="0" name="X">1150</param>
+                            <param id="1" name="Y">480</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="566386008558933" type="Enemy3">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="896754304454835" type="Enemy3">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="645235826775564" type="Enemy3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="603230418815736">
+            <conditions>
+                <condition id="5" name="On any finished" sid="859782633274048" type="Enemy3" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="310249186953688" type="Enemy3">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Enemy4 Path</comment>
+        <event-block sid="346810479705488">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="636607712038818" type="Enemy4" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="461327856296136" type="Enemy4" />
+            </actions>
+        </event-block>
+        <event-block sid="634663836457557">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="531034916191507" type="Enemy4" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="745273395507876">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="817639028969441" type="Enemy4">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">265</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="866599544766088" type="Enemy4" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="948074296566465" type="Enemy4">
+                            <param id="0" name="X">60</param>
+                            <param id="1" name="Y">136</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="915232681886672" type="Enemy4">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="484466295030923" type="Enemy4">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="245013133959828" type="Enemy4">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="874016737822204">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="419173287285654" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="693282957354813" type="Enemy4" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="794755563182591" type="Enemy4">
+                            <param id="0" name="X">275</param>
+                            <param id="1" name="Y">136</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="633817013888311" type="Enemy4">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="795522455656956" type="Enemy4">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="963792545814253" type="Enemy4">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="914600963633367">
+            <conditions>
+                <condition id="5" name="On any finished" sid="250537378672104" type="Enemy4" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="262322304689078" type="Enemy4">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Enemy5 Path</comment>
+        <event-block sid="664849486854123">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="486789685425283" type="Enemy5" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="826877017208811" type="Enemy5" />
+            </actions>
+        </event-block>
+        <event-block sid="953437541134597">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="616422608686172" type="Enemy5" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="255377432459885">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="622814559764609" type="Enemy5">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">1450</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="237763782525482" type="Enemy5" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="940443905076891" type="Enemy5">
+                            <param id="0" name="X">1200</param>
+                            <param id="1" name="Y">136</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="409626155577292" type="Enemy5">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="494851219749487" type="Enemy5">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="502104807545931" type="Enemy5">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="964967683853617">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="405274968571449" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pathfinding" id="2" name="Stop" sid="855176060722904" type="Enemy5" />
+                        <action behavior="Pathfinding" id="0" name="Find path" sid="599445009045826" type="Enemy5">
+                            <param id="0" name="X">1475</param>
+                            <param id="1" name="Y">136</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="718696847209442" type="Enemy5">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="908988960222902" type="Enemy5">
+                            <param id="0" name="Animation">&quot;Right&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="8" name="Set flipped" sid="227802849279526" type="Enemy5">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="781742792314909">
+            <conditions>
+                <condition id="5" name="On any finished" sid="966948495012413" type="Enemy4" />
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="294021408241848" type="Enemy5">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Player door interactions</comment>
+        <event-block sid="518110339868755">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="110836488744320" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Player.X -50</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="167607746466089" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">Player.X +50</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="723152868573186" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">Player.Y - 50</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="253727221873742" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">Player.Y + 50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="260060651227119" type="Door">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="895340073920116" type="Enemy" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="274438687380031" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="821555174147528" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="699164192208623" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="694997962512454" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527834070012686">
+            <conditions>
+                <condition id="-22" name="Else" sid="570083364374001" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="445155127664053">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="502401260729970" type="Door">
+                            <param id="0" name="Instance variable">IsLooked</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="465114467809706">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="411730529900293" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="913924157173228" type="Door">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="LineOfSight" id="2" name="Add obstacle" sid="563797782091663" type="Enemy">
+                            <param id="0" name="Obstacle">Door</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enemy door interactions</comment>
+        <comment>No enemy2 since he can&apos;t encounter doors</comment>
+        <event-block sid="218821020785984">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="998308552807515" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Enemy.X - 30</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="894080225649783" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">Enemy.X + 30</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="288302982143106" type="Door">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y -30</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="657098968113114" type="Door">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">Enemy.Y + 30</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="698078422596998" type="Door">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="924293195085819" type="Enemy" />
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="551344627265670" type="Enemy">
+                    <param id="0" name="Obstacle">Wall</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="990526531973913" type="Enemy">
+                    <param id="0" name="Obstacle">Canape</param>
+                </action>
+                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="266432337616377" type="Enemy">
+                    <param id="0" name="Obstacle">Box</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="449019764647017" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521947501794257">
+            <conditions>
+                <condition id="-22" name="Else" sid="920096961267040" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="452555074315180">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="986792282806416" type="Door">
+                            <param id="0" name="Instance variable">IsLooked</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="563567743461358">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="475988108312025" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="185546603297001" type="Door">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="LineOfSight" id="2" name="Add obstacle" sid="331025717940734" type="Enemy">
+                            <param id="0" name="Obstacle">Door</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Reset the isLooked boolean at each tick to avoid door bugs</comment>
+        <event-block sid="405039092482454">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="576775139471680" type="System">
+                    <param id="0" name="Interval (seconds)">fps/60</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="395043436246159" type="Door">
+                    <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="159038355123075">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="130475260582695" type="EndDoor">
+                            <param id="0" name="Instance variable">IsWin</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="803244955048099" type="EndDoor" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="726581656045329">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="544235405570429" type="NextLevelBox">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="698713530610007" type="ProgressBar">
+                    <param id="0" name="Instance variable">Percentage</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="640853703574138" type="System">
+                    <param id="0" name="Layout">Level 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655832306751573">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="410777921144232" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="912320197798550">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="914660684770659" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="779452197963231" type="Player">
+                            <param id="0" name="X">Player.X - 100</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="896906897766670" type="Player">
+                            <param id="0" name="Input">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="991636549591451" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action behavior="8Direction" id="2" name="Set ignoring input" sid="214312010244812" type="Player">
+                            <param id="0" name="Input">0</param>
                         </action>
                     </actions>
                 </event-block>
