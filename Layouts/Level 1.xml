@@ -1416,12 +1416,12 @@
                         <behavior-instance type="Pathfinding">
                             <properties>
                                 <cell-size>50</cell-size>
-                                <cell-border>-1</cell-border>
+                                <cell-border>-20</cell-border>
                                 <obstacles>Custom</obstacles>
                                 <max-speed>50</max-speed>
                                 <acceleration>200</acceleration>
                                 <deceleration>800</deceleration>
-                                <rotate-speed>600</rotate-speed>
+                                <rotate-speed>1000</rotate-speed>
                                 <rotate-object>No</rotate-object>
                                 <diagonals>Disabled</diagonals>
                                 <initial-state>Enabled</initial-state>
@@ -1437,10 +1437,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>898</x>
-                        <y>1057</y>
+                        <y>1055</y>
                         <z>0</z>
-                        <width>55</width>
-                        <height>55</height>
+                        <width>50</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
