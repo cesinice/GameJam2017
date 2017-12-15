@@ -228,12 +228,32 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="375534500385402" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Eriadilos\Documents\GitHub\GameJam2017\Sprites\PNG\Hero\hero_wounded1.png">
+                <animation framecount="3" loop="0" name="Dead" pingpong="0" repeatcount="1" repeatto="0" sid="375534500385402" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_wounded1.png">
                         <collision-poly>
                             <point x="0.59375" y="0.59375" />
                             <point x="0.5" y="0.65625" />
                             <point x="0.84375" y="0.15625" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_wounded2.png">
+                        <collision-poly>
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.28125" />
+                            <point x="0.4375" y="0.5625" />
+                            <point x="0.9375" y="0.9375" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Hero\hero_wounded3.png">
+                        <collision-poly>
+                            <point x="0.59375" y="0.59375" />
+                            <point x="0.5" y="0.65625" />
+                            <point x="0.8125" y="0.1875" />
                             <point x="0.9375" y="0.9375" />
                             <point x="0.5" y="0.875" />
                             <point x="0.125" y="0.875" />
@@ -527,10 +547,55 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="IsLooked" sid="770368199086460" type="boolean" />
+                <instance-variable name="IsOpen" sid="724473326068710" type="boolean" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489522708385671" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="Open" pingpong="0" repeatcount="1" repeatto="0" sid="159126336695714" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door5.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Openned" pingpong="0" repeatcount="1" repeatto="0" sid="534833318930100" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door5.png" />
+                </animation>
+                <animation framecount="5" loop="0" name="Close" pingpong="0" repeatcount="1" repeatto="0" sid="628256602668609" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Antoine\Documents\Dev\Games\Construct\GameJam2017\Sprites\PNG\Assets\door1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
