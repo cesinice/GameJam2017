@@ -1046,11 +1046,11 @@
             <conditions>
                 <condition id="-1" name="Compare X" sid="110836488744320" type="Door">
                     <param id="0" name="Comparison">5</param>
-                    <param id="1" name="X co-ordinate">Player.X -50</param>
+                    <param id="1" name="X co-ordinate">Player.X - 36</param>
                 </condition>
                 <condition id="-1" name="Compare X" sid="167607746466089" type="Door">
                     <param id="0" name="Comparison">3</param>
-                    <param id="1" name="X co-ordinate">Player.X +50</param>
+                    <param id="1" name="X co-ordinate">Player.X +36</param>
                 </condition>
                 <condition id="-2" name="Compare Y" sid="723152868573186" type="Door">
                     <param id="0" name="Comparison">5</param>
@@ -1062,8 +1062,16 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="260060651227119" type="Door">
-                    <param id="0" name="Visibility">0</param>
+                <action id="4" name="Set animation" sid="198020133286381" type="Door">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="719444735974581" type="Door">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="639067564580364" type="Door">
+                    <param id="0" name="Animation">&quot;Openned&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
                 <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="895340073920116" type="Enemy" />
                 <action behavior="LineOfSight" id="2" name="Add obstacle" sid="274438687380031" type="Enemy">
@@ -1078,6 +1086,10 @@
                 <action id="-13" name="Set boolean" sid="694997962512454" type="Door">
                     <param id="0" name="Instance variable">IsLooked</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="612863662030706" type="Player">
+                    <param id="0" name="Animation">&quot;Dead&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
@@ -1100,11 +1112,26 @@
                         <condition id="-22" name="Else" sid="411730529900293" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="913924157173228" type="Door">
-                            <param id="0" name="Visibility">1</param>
+                        <action id="4" name="Set animation" sid="515751389676588" type="Door">
+                            <param id="0" name="Animation">&quot;Close&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="731796897839922" type="Door">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="594631041351463" type="Door">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="3" name="Start" sid="101279435038797" type="Door">
+                            <param id="0" name="From">0</param>
                         </action>
                         <action behavior="LineOfSight" id="2" name="Add obstacle" sid="563797782091663" type="Enemy">
                             <param id="0" name="Obstacle">Door</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="129564209434644" type="Player">
+                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                            <param id="1" name="From">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1132,8 +1159,16 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="698078422596998" type="Door">
-                    <param id="0" name="Visibility">0</param>
+                <action id="4" name="Set animation" sid="107655501297305" type="Door">
+                    <param id="0" name="Animation">&quot;Open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="506269031977929" type="Door">
+                    <param id="0" name="Animation">&quot;Openned&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="3" name="Start" sid="586143938472007" type="Door">
+                    <param id="0" name="From">0</param>
                 </action>
                 <action behavior="LineOfSight" id="3" name="Clear obstacles" sid="924293195085819" type="Enemy" />
                 <action behavior="LineOfSight" id="2" name="Add obstacle" sid="551344627265670" type="Enemy">
@@ -1147,6 +1182,10 @@
                 </action>
                 <action id="-13" name="Set boolean" sid="449019764647017" type="Door">
                     <param id="0" name="Instance variable">IsLooked</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="651814609965880" type="Door">
+                    <param id="0" name="Instance variable">IsOpen</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
@@ -1169,14 +1208,38 @@
                     <conditions>
                         <condition id="-22" name="Else" sid="475988108312025" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="185546603297001" type="Door">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action behavior="LineOfSight" id="2" name="Add obstacle" sid="331025717940734" type="Enemy">
-                            <param id="0" name="Obstacle">Door</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="941123746071420">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="634600124337282" type="Door">
+                                    <param id="0" name="Instance variable">IsOpen</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="299837046710528">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="283829068579386" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="718715069536520" type="Door">
+                                    <param id="0" name="Animation">&quot;Close&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="3" name="Start" sid="382704854123126" type="Door">
+                                    <param id="0" name="From">1</param>
+                                </action>
+                                <action behavior="LineOfSight" id="2" name="Add obstacle" sid="331025717940734" type="Enemy">
+                                    <param id="0" name="Obstacle">Door</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="685816051625092" type="Door">
+                                    <param id="0" name="Instance variable">IsOpen</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>

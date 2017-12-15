@@ -519,10 +519,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>752</x>
-                        <y>1177.181640625</y>
+                        <y>1168.001586914</y>
                         <z>0</z>
-                        <width>141.63659668</width>
-                        <height>32</height>
+                        <width>159.996887207</width>
+                        <height>32.200630188</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -577,9 +577,9 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1072</x>
-                        <y>1176.698974609</y>
+                        <y>1167.5</y>
                         <z>0</z>
-                        <width>142.602050781</width>
+                        <width>161</width>
                         <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -808,7 +808,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1006</x>
+                        <x>1007</x>
                         <y>192</y>
                         <z>0</z>
                         <width>64</width>
@@ -1211,7 +1211,7 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1269,7 +1269,7 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>-1.57079649</angle>
+                        <angle>1.570796371</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1298,7 +1298,7 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1503,14 +1503,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>348</x>
+                        <x>336</x>
                         <y>1152</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1528,14 +1529,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>512</x>
-                        <y>836</y>
+                        <y>847</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1553,15 +1555,16 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>764</x>
-                        <y>1065.666137695</y>
+                        <x>752</x>
+                        <y>1055</y>
                         <z>0</z>
-                        <width>8</width>
-                        <height>83.331787109</height>
+                        <width>32</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1578,15 +1581,16 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1084</x>
-                        <y>1065.181640625</y>
+                        <x>1072</x>
+                        <y>1056</y>
                         <z>0</z>
-                        <width>8</width>
-                        <height>82.36340332</height>
+                        <width>32</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1603,14 +1607,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1312</x>
-                        <y>836</y>
+                        <y>847</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1628,14 +1633,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>410</x>
+                        <x>400</x>
                         <y>704</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1653,14 +1659,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>448</x>
-                        <y>218</y>
+                        <y>207</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1678,14 +1685,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>959.880371094</x>
-                        <y>218.940170288</y>
+                        <x>960</x>
+                        <y>208</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1703,14 +1711,15 @@
                     </properties>
                     <instance-variables>
                         <IsLooked>false</IsLooked>
+                        <IsOpen>false</IsOpen>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>996</x>
+                        <x>1007</x>
                         <y>128</y>
                         <z>0</z>
-                        <width>8</width>
+                        <width>32</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1776,7 +1785,7 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
