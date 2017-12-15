@@ -361,6 +361,7 @@
                     </properties>
                     <instance-variables>
                         <Dead>false</Dead>
+                        <Lives>5</Lives>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="8Direction">

@@ -98,6 +98,10 @@
                 <action id="-15" name="Set visible" sid="626832410359143" type="Text">
                     <param id="0" name="Visibility">0</param>
                 </action>
+                <action id="-12" name="Subtract from" sid="121985524796680" type="Player">
+                    <param id="0" name="Instance variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <comment>Box Interaction</comment>
@@ -728,6 +732,13 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="4" name="Set animation" sid="938059163403053" type="Enemy2">
+                            <param id="0" name="Animation">&quot;GoingUp&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="102461815653038" type="Enemy2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
                         <action behavior="Pathfinding" id="2" name="Stop" sid="331461158540498" type="Enemy2" />
                         <action behavior="Pathfinding" id="0" name="Find path" sid="354970595776923" type="Enemy2">
                             <param id="0" name="X">190</param>
@@ -736,6 +747,7 @@
                         <action id="7" name="Set mirrored" sid="361922104057580" type="Enemy2">
                             <param id="0" name="State">0</param>
                         </action>
+                        <action id="2" name="Stop" sid="404382020962449" type="Enemy2" />
                     </actions>
                 </event-block>
                 <event-block sid="990939870236551">
@@ -751,6 +763,14 @@
                         <action id="7" name="Set mirrored" sid="438396531791843" type="Enemy2">
                             <param id="0" name="State">1</param>
                         </action>
+                        <action id="4" name="Set animation" sid="762654067761052" type="Enemy2">
+                            <param id="0" name="Animation">&quot;GoingDown&quot;</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="908114927344680" type="Enemy2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="885084631945293" type="Enemy2" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -1186,21 +1206,37 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="912320197798550">
+                <event-block sid="996735900395275">
                     <conditions>
-                        <condition id="2" name="Is playing" sid="914660684770659" type="Player">
-                            <param id="0" name="Animation">&quot;WalkLeft&quot;</param>
+                        <condition id="-8" name="Is boolean instance variable set" sid="938845343894716" type="Player">
+                            <param id="0" name="Instance variable">Dead</param>
                         </condition>
                     </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="131728536718187">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="602852405272809" type="System" />
+                    </conditions>
                     <actions>
-                        <action id="-1" name="Set X" sid="779452197963231" type="Player">
-                            <param id="0" name="X">Player.X - 100</param>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="925128935479651" type="Player">
+                            <param id="0" name="Max Speed">1000</param>
                         </action>
+                        <action behavior="8Direction" id="3" name="Set speed" sid="779452197963231" type="Player">
+                            <param id="0" name="Speed">1000</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="991636549591451" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="8Direction" id="4" name="Set max speed" sid="255049046489245" type="Player">
+                            <param id="0" name="Max Speed">200</param>
+                        </action>
+                        <action behavior="8Direction" id="0" name="Stop" sid="819953754916403" type="Player" />
                         <action behavior="8Direction" id="2" name="Set ignoring input" sid="896906897766670" type="Player">
                             <param id="0" name="Input">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="991636549591451" type="System">
-                            <param id="0" name="Seconds">0.3</param>
+                        <action id="-16" name="Wait" sid="758984892033591" type="System">
+                            <param id="0" name="Seconds">0.5</param>
                         </action>
                         <action behavior="8Direction" id="2" name="Set ignoring input" sid="214312010244812" type="Player">
                             <param id="0" name="Input">0</param>
