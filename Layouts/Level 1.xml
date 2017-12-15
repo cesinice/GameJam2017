@@ -1561,10 +1561,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>752</x>
-                        <y>1055.326293945</y>
+                        <y>1055</y>
                         <z>0</z>
                         <width>32</width>
-                        <height>64.652587891</height>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1952,15 +1952,15 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1584.166992188</x>
+                        <x>1589</x>
                         <y>576</y>
                         <z>0</z>
-                        <width>64</width>
-                        <height>32</height>
+                        <width>20</width>
+                        <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>1.570796371</angle>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
