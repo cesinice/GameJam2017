@@ -149,6 +149,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Carpet" uid="107">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>918</x>
+                        <y>785</y>
+                        <z>0</z>
+                        <width>217</width>
+                        <height>217</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500840366</hotspotX>
+                        <hotspotY>0.500840366</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

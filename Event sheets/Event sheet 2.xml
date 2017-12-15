@@ -350,7 +350,7 @@
                     <param id="0" name="Frame number">0</param>
                 </action>
                 <action id="2" name="Stop" sid="217921203226611" type="Enemy" />
-                <action id="8" name="Set flipped" sid="960136313891238" type="Enemy">
+                <action id="7" name="Set mirrored" sid="276861265331616" type="Enemy">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>

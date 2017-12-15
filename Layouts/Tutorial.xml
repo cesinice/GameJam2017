@@ -103,8 +103,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>195.016494751</x>
-                        <y>152.773193359</y>
+                        <x>191.016494751</x>
+                        <y>78.773193359</y>
                         <z>0</z>
                         <width>209.090484619</width>
                         <height>63.635635376</height>
@@ -155,6 +155,28 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Carpet" uid="106">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>195.496017456</x>
+                        <y>253.675628662</y>
+                        <z>0</z>
+                        <width>217</width>
+                        <height>217</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500840366</hotspotX>
+                        <hotspotY>0.500840366</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -593,7 +615,7 @@
                 <instance type="Enemy" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Left</initial-animation>
+                        <initial-animation>Right</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -637,7 +659,7 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
+                        <angle>-0.002224762</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -766,8 +788,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>98.482696533</x>
-                        <y>128.773208618</y>
+                        <x>93.973907471</x>
+                        <y>55.895996094</y>
                         <z>0</z>
                         <width>198.180969238</width>
                         <height>47.272186279</height>
